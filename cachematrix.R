@@ -4,14 +4,14 @@
 
 ## makeCacheMatrix creates initial matrix, and establishes several other functions:
 ## 'set' creates the initial matrix, and sets its inverse as NULL. 
-##      makeCacheMatrix$set() can be called to change the initial matrix that was
+##      <your matrix>$set() can be called to change the initial matrix that was
 ##      created.
 ## 'get' returns the current matrix.
 ## 'setinverse' makes a call to cacheSolve to get the inverse. It should only be
-##      called within this function. Directly calling makeCacheMatrix$setinverse() 
+##      called within this function. Directly calling <your matrix>$setinverse() 
 ##      will generate an error.
 ## 'getinverse' will return the inverse of the current matrix. Directly calling 
-##      makeCacheMatrix$getinverse() bypasses the logic in cacheSolve that
+##      <your matrix>$getinverse() bypasses the logic in cacheSolve that
 ##      checks for an existing cache version of the inverse.
 
 makeCacheMatrix <- function(the_matrix = matrix()) {
