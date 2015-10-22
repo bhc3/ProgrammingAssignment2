@@ -29,12 +29,12 @@ makeCacheMatrix <- function(the_matrix = matrix()) {
 ## cacheSolve will return a matrix that is the inverse of 'the_matrix'. 
 ## Once the inverse matrix has been generated, it is retained. Subsequent
 ## calls to get the inverse matrix will receive the previously run version.
-## If the initial matrix is changed via the makeCacheMatrix$set() call,
+## If the initial matrix is changed via the <your matrix>$set() call,
 ## a fresh version of the inverse matrix is generated.
 
 cacheSolve <- function(the_matrix, ...) {
   matrix_inverse <- the_matrix$getinverse()
-  if(!is.null(matrix_inverse)) { ## Any call to makeCacheMatrix$set() sets this to NULL.
+  if(!is.null(matrix_inverse)) { ## Any call to <your matrix>$set() sets this to NULL.
     message("getting cached data")
     return(matrix_inverse)
   }
